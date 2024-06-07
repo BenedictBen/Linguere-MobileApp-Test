@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react"
 import { SafeAreaView, StyleSheet, View , Platform, Text, TextInput, KeyboardAvoidingView, TouchableOpacity, Image } from "react-native"
 // import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import logo from "../assets/BEN.png"
+import logo from "../assets/images/BEN.png"
 import { API_ADDRESS } from "../api/api";
 
 export default function LoginScreen({ navigation }){

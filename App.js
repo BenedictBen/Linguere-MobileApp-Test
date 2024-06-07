@@ -5,6 +5,8 @@ import CompanyListScreen from './screens/CompanyListScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MapViewScreen from "./screens/MapViewScreen"
+import MapScreen from "./components/MapScreen"
+import DetailsScreen from "./screens/DetailsScreen";
 
 const Stack = createStackNavigator();
 
@@ -15,11 +17,16 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="CompanyList" component={CompanyListScreen} />
         <Stack.Screen name="MapView" component={MapViewScreen} />
+       <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-    // <View style={styles.container}>
-    //   <LoginScreen/>
-    // </View>
+    // <NavigationContainer style={styles.container}>
+    //   <Stack.Navigator initialRouteName="Map">
+    //             <Stack.Screen name="Map" component={MapScreen} />
+    //             <Stack.Screen name="Details" component={DetailsScreen} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+
   )
 }
 
