@@ -20,12 +20,7 @@ export default function App() {
        <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-    // <NavigationContainer style={styles.container}>
-    //   <Stack.Navigator initialRouteName="Map">
-    //             <Stack.Screen name="Map" component={MapScreen} />
-    //             <Stack.Screen name="Details" component={DetailsScreen} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
+    
 
   )
 }
